@@ -4,71 +4,56 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact Me</title>
+    <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="main.js"></script>
 </head>
 
 <body>
 
-    <section class="group">
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" class="logo">Michael Wenhold</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        <div class="menu">
-            <ul>
-                <li class="one">
-                    <a href="index.html">About</a>
-                </li>
-                <li class="two">
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-        <h1>Michael Wenhold</h1>
-
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Michael Wenhold" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="michaelwenhold@hotmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
     </section>
 
-    <div class="contact">
+  </div>
 
-        <h2>Contact</h2>
-
-        <div class="name">
-            <label for="Name">Name
-                <br>
-                <input type="text" name="fullname" value="Michael Wenhold">
-            </label>
-        </div>
-
-        <div class="email">
-            <label for="Email">Email</label>
-            <br>
-            <input type="text" name="email" value="michaelwenhold@hotmail.com">
-        </div>
-
-        <div class="message">
-            <label for="Message">Message</label>
-            <br>
-            <input type="text" name="Message">
-        </div>
-
-        <div class="submit">
-            <input type="submit" value="Submit">
-        </div>
-
-
+  <footer>
+    <div class="container">
+      Copyright &copy; 
     </div>
-
-
-    <footer>
-        Copyright &copy;
-    </footer>
-
-
+  </footer>
 </body>
 
 </html>
